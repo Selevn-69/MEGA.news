@@ -214,7 +214,7 @@ footer ul li a {
 
 footer h3::before{
   position: relative;
-  content: url('./assets/img/icons/Rectangle.svg');
+  content: url('../img/icons/Rectangle.svg');
   top: -3px;
   vertical-align: middle;
 
@@ -236,7 +236,7 @@ footer h3::before{
 
 .ig::before{
   position: relative;
-  content: url('./assets/img/icons/ig.svg');
+  content: url('../img/icons/ig.svg');
   left: -4px;
   top: 1px;
 }
