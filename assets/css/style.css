@@ -336,3 +336,35 @@ footer h4{
   display: flex;
   align-items: center;         
 }
+/*Football*/
+.football{
+  background-image: url('../img/images/football-blur.webp') ;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width:1400px) {
+    .center-football{
+      display: none;
+    }
+    .left-football{
+      display: none;
+    }
+
+    .right-football{
+      width: 75%;
+    }
+
+    .football-content{
+      justify-content: center !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .right-football{
+      width: 90%;
+    }
+}
