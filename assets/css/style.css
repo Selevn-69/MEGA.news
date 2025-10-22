@@ -190,7 +190,7 @@ body {
   background: inherit;           
 }
 
-footer h3{
+h3{
   font-size: 20px;
   
 }
@@ -212,12 +212,12 @@ footer ul li a {
   display: block;            
 }
 
-footer h3::before{
+h3::before{
   position: relative;
   content: url('../img/icons/Rectangle.svg');
   top: -3px;
   vertical-align: middle;
-
+  left: -4px;
 }
 
 .ig{
@@ -372,6 +372,7 @@ footer h4{
 /*Weather*/
 .weather{
   background-color: #F5F5F5;
+  overflow: hidden;
 }
 
 .weather img{
@@ -417,5 +418,112 @@ footer h4{
     .big-weather img{
       max-width: 100%;
       height: auto;
+    }
+}
+
+
+
+
+/*popular posts*/
+ .navbtn{
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  transition: all 0.3s ;
+}
+ .navbtn:hover{
+  background-color: #cacaca;
+}
+
+.card-auth{
+  background-color: #F5F5F5;
+  width: 98%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 12px;
+  transition: all 0.3s ;
+  margin-top: auto;
+}
+
+.popular .card-title{
+  font-size: 16px;
+}
+
+.popular .card-text{
+  font-size: 14px;
+  opacity: 75%;
+}
+.auth-right{
+  opacity: 50%;
+}
+
+.auth-left img{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+.popular h6{
+  font-size: 14px;
+}
+.popular .auth-left p{
+  font-size: 12px;
+  opacity: 75%;
+}
+
+.card-img-wrapper{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-img-wrapper img{
+  border-radius: 12px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  filter: brightness(100%);
+  transition: all 0.3s ;
+}
+
+.popular .card{
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ;
+}
+
+.popular .card{
+  flex: 1 1 auto;
+  cursor: pointer;
+  
+}
+
+.card-auth:hover{
+  background-color: #cacaca;
+}
+.card{
+  display: flex ;
+  flex-direction: column;
+}
+.popular .card:hover{
+  background-color: rgb(236, 236, 236);
+}
+
+.popular .card:hover .card-img-wrapper img{
+  filter: brightness(70%);
+}
+
+@media screen and (max-width:992px) {
+    .hide-first{
+      display: none;
+    }
+}
+
+@media screen and (max-width:764px) {
+    .hide-second{
+      display: none;
     }
 }
