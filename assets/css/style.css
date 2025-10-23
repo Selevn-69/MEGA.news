@@ -527,3 +527,74 @@ footer h4{
       display: none;
     }
 }
+
+/*new posts*/
+
+.horizantal-card{
+  flex: 1 1 auto;
+  flex-direction: row;
+  max-width: 744px;
+  
+}
+
+.horizantal-card .card-img-wrapper {
+  width: 340px;        /* your default width */
+  max-width: 100%;     /* shrink on small screens */
+  overflow: hidden;    /* crop the excess */
+  margin-inline: auto; /* center the wrapper */
+}
+.horizantal-card .card-img-wrapper img {
+  width: 100%;         /* always fill horizontally */
+  height: 100%;        /* match the wrapper’s height */
+  object-fit: cover;   /* crop sides instead of squishing */
+  display: block;
+}
+.horizantal-card .card-img-wrapper{
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width:520px) {
+    .new .hide-hor{
+      display: none !important;
+    }
+
+    .new .horizantal-card{
+      flex-direction: column;
+      max-width: 360px;
+    }
+
+    .horizantal-card .card-img-wrapper{
+      padding-bottom: 0px;
+  }
+.new .row{
+  justify-content: center;
+}
+.horizantal-card .card-img-wrapper {
+  width: 100% !important;            
+  max-width: none;        
+  overflow: visible;      
+  margin-inline: 0; 
+}
+.horizantal-card .card-img-wrapper img {
+  width: 100%;            
+  height: auto;           
+  object-fit: fill;       
+  display: inline;  
+}
+}
+
+.new .navbtn{
+  width: 119px;
+  font-size: 14px;
+  opacity: 75%;
+  color: #3E3232;
+  font-weight: 450;
+}
+
+.new .navbtn::after{
+  position: relative;
+  content: url(../img/icons/right\ arrow.svg);
+  opacity: 50%;
+  top: 1px;
+  left: 4px;
+}
