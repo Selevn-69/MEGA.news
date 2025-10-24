@@ -598,3 +598,132 @@ footer h4{
   top: 1px;
   left: 4px;
 }
+
+
+/*latest vids*/
+
+.latest-vids{
+  background-color: #F5F5F5;
+}
+
+.latest-vids .navbtn{
+  background-color: rgba(62, 50, 50, 0.05)
+}
+
+.latest-vids .navbtn:hover{
+  background-color: rgba(26, 20, 20, 0.2)
+}
+
+.main-vid{
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.vid-content{
+  overflow: auto !important;
+  
+}
+
+.playbtn{
+  position: absolute;
+  top: 150px;
+  left: 312px;
+  
+}
+
+.play-circle{
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ;
+}
+
+.vid-img img{
+  border-radius: 12px;
+  transition: all 0.3s ;
+}
+
+.vid-desc{
+  position: absolute;
+  width: 724px;
+  top: 316px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ;
+}
+
+.vid-desc h6{
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.vid-desc p{
+  font-size: 14px;
+  opacity: 75%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-vid:hover .play-circle{
+  background-color: rgba(175, 175, 175, 0.75);
+}
+
+.main-vid:hover .vid-desc{
+  background-color: rgba(175, 175, 175, 0.75);
+}
+
+.main-vid:hover .vid-img img{
+  filter: brightness(80%);
+}
+
+.latest-vids .card{
+  width: 488px;
+}
+
+.mini-cards .card{
+  border: none;
+  border-radius: 12px;
+  width: 488px;
+  height: 210px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mini-cards .card h5{
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mini-cards .card p{
+  font-size: 14px;
+  opacity: 75%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mini-cards img{
+  width: 190px;
+  height: 190px;
+  border-radius: 12px;
+}
+
+.mini-cards .card-img-wrapper{
+  width: 200px;
+  border-radius: 12px;
+}
+
+.mini-cards .card:hover{
+  background-color: rgb(173, 173, 173);
+}
