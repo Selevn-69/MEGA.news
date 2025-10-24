@@ -727,3 +727,145 @@ footer h4{
 .mini-cards .card:hover{
   background-color: rgb(173, 173, 173);
 }
+
+/*catgory bar*/
+
+.cat-bar a{
+  border: none;
+  width: 170px;
+  height: 48px;
+  border-radius: 12px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  filter: brightness(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.cat-bar .bar{
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.foodbtn{
+  background-image: url('../img/images/foodcat.webp');
+}
+
+.animalbtn{
+  background-image: url('../img/images/animalcat.webp');
+}
+
+.carbtn{
+  background-image: url('../img/images/carcat.webp');
+}
+
+.sportbtn{
+  background-image: url('../img/images/sportcat.webp');
+}
+
+.musicbtn{
+  background-image: url('../img/images/musiccat.webp');
+}
+
+.tecbtn{
+  background-image: url('../img/images/techcat.webp');
+}
+
+.absbtn{
+  background-image: url('../img/images/abstractcat.webp');
+}
+
+.cat-bar a:hover{
+  filter: brightness(70%);
+}
+
+@media screen and (max-width:1452px) {
+  .cat-bar{
+    display: none;
+  }
+}
+
+/*hero*/
+
+
+.right-cont{
+  position: relative;
+}
+.hero-card{
+  position: relative;
+}
+
+.hero-card .vid-desc{
+  max-width: 339px;
+  max-height: 117px;
+}
+
+.hero img{
+  border-radius: 12px;
+}
+
+.hero .vid-desc{
+  top: 328px;
+}
+
+.hero .navbtn{
+  position: absolute;
+  
+}
+
+.hero .nav-left{
+  top: 195px;
+  left: 9px;
+}
+
+.hero .nav-right{
+  
+  top: 195px;
+  left: 696px;
+}
+
+.hero .vid-desc{
+  transition: all 0.3s;
+}
+.hero .hero-card{
+  cursor: pointer;
+}
+
+.hero .hero-card:hover .vid-desc{
+  
+  background-color: rgba(175, 175, 175, 0.75);
+}
+
+.hero .right-hero:hover .vid-desc{
+  
+  background-color: rgba(175, 175, 175, 0.75);
+}
+
+.right-hero{
+  cursor: pointer;
+}
+
+@media screen and (max-width:1488px) {
+   .left-hero{
+    display: none !important;
+  }
+  .hero .container{
+    display: flex;
+    justify-content: center;
+  }
+ 
+}
+
+@media screen and (max-width:826px) {
+ .hero{
+  display: none;
+ }
+}
