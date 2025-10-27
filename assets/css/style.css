@@ -877,6 +877,9 @@ footer h4{
   color: #3E3232;
 }
 
+.bread{
+  font-size: 12px;
+}
 /*sortbar*/
 
 .sortcontent{
@@ -1025,6 +1028,7 @@ footer h4{
   border: none;
   border-radius: 12px;
   font-size: 14px;
+  padding: 10px;
 }
 .form-control:focus{
   background-color: #F5F5F5;
@@ -1058,5 +1062,107 @@ footer h4{
 @media screen and (max-width:400px) {
  .register{
   padding-top: 20px; 
+ }
+}
+
+/*contact us*/
+
+.contact-forms h6{
+  font-size: 16px;
+  color: #3E3232;
+}
+
+.exp-btns button{
+  border: none;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 10px 24px;
+  transition: all 0.3s;
+}
+
+.exp-btns p{
+  margin: 0px;
+}
+.explanation{
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.exp-btns button:hover{
+  background-color: #cacaca;
+}
+
+.ex-add{
+  position: relative;
+  font-size: 14px;
+  height: 100%;
+  opacity: 75%;
+  max-height: 360px;
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  
+}
+
+.ex-add::before {
+  content: "";
+  position: absolute;
+  top: 10px; bottom: 10px;
+  left: 10px; right: 10px;
+  border: 1px dashed rgba(0, 0, 0, 0.25);
+  border-radius: 16px;        
+  pointer-events: none;
+  border-style: dashed;
+  border-width: 2px;
+}
+
+.ex-add button{
+  color: #3E3232;
+  font-size: 14px;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 500;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background-color: #F5F5F5;
+  transition: all 0.3s;
+}
+.ex-add button:hover{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.ex-add button img{
+  width: 14px;
+  height: 14px;
+}
+
+.send-btn{
+  color: #FFFFFF;
+  background-color: #fa506b;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.send-btn:hover{
+  background-color: #b83a4f;
+}
+@media screen and (max-width:770px) {
+ .ex-hide{
+  display: none;
+ }
+}
+
+@media screen and (max-width:432px) {
+ 
+ .exp-btns button{
+  padding: 10px 13px;
+ }
+}
+
+@media screen and (max-width:991px) {
+ .send-div{
+  padding-top: 60px !important;
  }
 }
