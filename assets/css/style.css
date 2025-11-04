@@ -1267,6 +1267,8 @@ footer h4{
   max-width: 332px;
 }
 
+
+
 .responding::before{
   position: absolute;
   content: url(../img/icons/clock.svg);
